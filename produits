@@ -1,0 +1,65 @@
+import { Button } from "./ui/button";
+
+const products = [
+  {
+    name: "Robe",
+    description: "Robe Blanche de créateur",
+    price: "130,000€",
+    image: "https://images.unsplash.com/photo-1616348490852-d80c545b4f79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB3aGl0ZSUyMGRyZXNzJTIwZmFzaGlvbnxlbnwxfHx8fDE3NjAzODA2OTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+  },
+  {
+    name: "Ensemble costume femme",
+    description: "Veste de blazer avec son pantalon tailleur blanc",
+    price: "60,000€",
+    image: "https://images.unsplash.com/photo-1693070739008-c3b048f1f976?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMGJsYXplciUyMHN1aXQlMjBmYXNoaW9ufGVufDF8fHx8MTc2MDM4MDY5MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+  },
+  {
+    name: "Chaussure à talon",
+    description: "Chaussure à talon rouge effet croisée",
+    price: "15,000€",
+    image: "https://images.unsplash.com/photo-1613987876445-fcb353cd8e27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWQlMjBoZWVscyUyMGZhc2hpb258ZW58MXx8fHwxNzYwMzgwNjkxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+  },
+  {
+    name: "Robe unique",
+    description: "Robe de créateur Rouge unique",
+    price: "248,000€",
+    image: "https://images.unsplash.com/photo-1694452243736-2b9c00d001b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWQlMjBkcmVzcyUyMGVsZWdhbnQlMjBmYXNoaW9ufGVufDF8fHx8MTc2MDM4MDY5Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+  }
+];
+
+export function FeaturedProducts() {
+  return (
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-[Simonetta]">Nouvelle Collection</h2>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+          {products.map((product, index) => (
+            <div key={index} className="group cursor-pointer">
+              <div className="aspect-[3/4] overflow-hidden mb-4 bg-secondary">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-base">Ensemble de costume homme</h3>
+                <p className="text-sm text-muted-foreground">{product.description}</p>
+                <p className="text-sm">{product.price}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="text-center">
+          <Button className="bg-accent hover:bg-accent/90 text-white px-12 py-6">
+            Voir toute la collection
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
