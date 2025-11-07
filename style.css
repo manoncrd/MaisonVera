@@ -76,31 +76,7 @@
   background: #b32d20;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 30px;
-  }
 
-  .navbar-left {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .navbar nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .btn-header {
-    align-self: flex-end;
-    margin-top: 10px;
-  }
-  
-}
 
 /* ========== HERO ========== */
 .hero {
@@ -311,27 +287,28 @@ footer .socials a {
 }
 
 /* ========== RESPONSIVE ========== */
+
 @media (max-width: 768px) {
   .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 30px;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar nav ul {
     flex-direction: column;
     gap: 10px;
   }
 
-  .hero h1 {
-    font-size: 28px;
+  .btn-header {
+    align-self: flex-end;
+    margin-top: 10px;
   }
-
-  .intro, .collection {
-    padding: 60px 20px;
-  }
-
-  .event-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .collection-grid {
-    grid-template-columns: 1fr;
-  }
+  
 }
-
