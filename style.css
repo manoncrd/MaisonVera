@@ -13,10 +13,11 @@
 }
 
 /* ========== HEADER ========== */
-/* ===== NAVBAR ===== */
+
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   padding: 20px 60px;
   background: rgba(255, 255, 255, 0.95);
@@ -24,31 +25,31 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Conteneur gauche : logo + menu */
-.navbar-left {
-  display: flex;
-  align-items: center;
-  gap: 50px; /* espace entre logo et liens */
-}
-
+/* Logo + Navigation groupés à gauche */
 .logo {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   font-weight: bold;
+  margin-right: 50px;
+  white-space: nowrap;
 }
 
 .logo span {
   color: #8c1c13;
 }
 
-/* Menu */
+.navbar nav {
+  flex: 1;
+}
+
 .navbar nav ul {
   display: flex;
   list-style: none;
-  gap: 30px; /* espace entre chaque lien */
+  gap: 40px; /* espace entre les liens */
+  align-items: center;
 }
 
 .navbar nav a {
@@ -62,11 +63,11 @@
   color: #8c1c13;
 }
 
-/* Bouton à droite */
+/* Bouton Accueil à droite */
 .btn-header {
   background: #8c1c13;
   color: white;
-  padding: 8px 18px;
+  padding: 8px 20px;
   border-radius: 4px;
   text-decoration: none;
   transition: background 0.3s;
@@ -75,6 +76,7 @@
 .btn-header:hover {
   background: #b32d20;
 }
+
 
 
 
@@ -295,20 +297,14 @@ footer .socials a {
     padding: 15px 30px;
   }
 
-  .navbar-left {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
   .navbar nav ul {
     flex-direction: column;
     gap: 10px;
+    margin-top: 10px;
   }
 
   .btn-header {
     align-self: flex-end;
     margin-top: 10px;
   }
-  
 }
