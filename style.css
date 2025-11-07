@@ -54,39 +54,56 @@ h1, h2, h3, h4 {
 
 /* --- HERO --- */
 .hero {
-  background: url('https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
-  height: 90vh;
+  height: 100vh;
+  background: url('acceuil.png') no-repeat center center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
   text-align: center;
-  padding: 0 20px;
+  color: white;
+  position: relative;
+}
+
+/* Ajout d’un filtre sombre pour bien faire ressortir le texte */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Positionnement du texte au-dessus du filtre */
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
-  color: #b22222;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #b22222; /* Rouge chic */
+  margin-bottom: 15px;
 }
 
 .hero p {
-  margin: 20px auto;
   max-width: 700px;
+  margin: 0 auto 25px auto;
+  font-size: 1rem;
 }
 
-.btn {
-  background: #8b0000;
-  color: #fff;
-  padding: 10px 25px;
+.hero .btn {
+  background: #b22222;
+  color: white;
+  padding: 12px 25px;
   text-decoration: none;
   border-radius: 3px;
+  font-weight: bold;
 }
 
-.btn.center {
-  display: block;
-  width: max-content;
-  margin: 40px auto;
-}
 
 /* --- ABOUT --- */
 .about {
