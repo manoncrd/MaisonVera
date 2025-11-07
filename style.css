@@ -13,12 +13,13 @@
 }
 
 /* ========== HEADER ========== */
+/* ===== NAVBAR ===== */
 .navbar {
   position: fixed;
   top: 0;
-  width: 100;
-  padding: 20px 60px ;
-  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 20px 60px;
+  background: rgba(255, 255, 255, 0.95);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,10 +27,16 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Conteneur gauche : logo + menu */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 50px; /* espace entre logo et liens */
+}
 
 .logo {
   font-family: 'Playfair Display', serif;
-  font-size: 22px ;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -37,23 +44,25 @@
   color: #8c1c13;
 }
 
-.navbar ul {
+/* Menu */
+.navbar nav ul {
   display: flex;
   list-style: none;
-  gap: 25px;
+  gap: 30px; /* espace entre chaque lien */
 }
 
-.navbar a {
+.navbar nav a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
   transition: color 0.3s;
 }
 
-.navbar a:hover {
+.navbar nav a:hover {
   color: #8c1c13;
 }
 
+/* Bouton à droite */
 .btn-header {
   background: #8c1c13;
   color: white;
@@ -65,6 +74,32 @@
 
 .btn-header:hover {
   background: #b32d20;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 30px;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-header {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+  
 }
 
 /* ========== HERO ========== */
