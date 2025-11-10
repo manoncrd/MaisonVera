@@ -48,6 +48,8 @@ h1, h2, h3, h4 {
 
 .nav-links .btn {
 
+  border-color: red;
+  color: red;
   padding: 6px 15px;
   border-radius: 3px;
 }
