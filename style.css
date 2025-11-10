@@ -20,7 +20,11 @@ h1, h2, h3, h4 {
   z-index: 10;
   padding: 15px 0;
 }
+.navbar .a {
 
+  font-size: 4px;
+}
+  
 .navbar .container {
   display: flex;
   justify-content: space-between;
