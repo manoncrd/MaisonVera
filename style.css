@@ -5,6 +5,9 @@ body {
   color: #222;
   background-color: #fff;
 }
+p { 
+  color: #828282;
+  }
 
 h1, h2, h3, h4 {
   font-family: simonetta;
