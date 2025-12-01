@@ -175,8 +175,13 @@ h1, h2, h3, h4 {
 /* --- NEWSLETTER --- */
 .newsletter {
   background: url('acceuil.png') no-repeat center center;
-  color: #fff;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  color: white;
+  position: relative;
 }
 
 .newsletter-box {
