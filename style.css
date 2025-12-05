@@ -174,8 +174,10 @@ h1, h2, h3, h4 {
 }
 
 /* --- NEWSLETTER --- */
- background: url('acceuil.png') center/cover no-repeat;
+ .newsletter {
+background: url('acceuil.png') no-repeat center center;
     filter: grayscale(100%);
+   }
 
 .newsletter-box {
     width: 55%;
