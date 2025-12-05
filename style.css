@@ -234,6 +234,9 @@ h1, h2, h3, h4 {
     font-style: italic;
     color: #333;
 }
+.newsletter-box button {
+  color: #910707;
+  }
 
 /* Formulaire */
 .form-container {
