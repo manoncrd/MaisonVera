@@ -248,14 +248,14 @@ h1, h2, h3, h4 {
     border: none;
     font-size: 16px;
     font-weight: 600;
-    background: #a52a2a;
+    background: #910707;
     color: white;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .form-container button:hover {
-    background: #8b2323;
+    background: #910707;
 }
 
 /* Footer */
