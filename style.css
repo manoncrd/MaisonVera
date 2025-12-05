@@ -178,7 +178,22 @@ h1, h2, h3, h4 {
 .price {
   font-weight: bold;
 }
+.view-all-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    background: #7a1d14;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
+.view-all-btn:hover {
+    background: #5c140e;
+}
 /* --- NEWSLETTER --- */
  /* --- NEWSLETTER --- */
 .newsletter {
