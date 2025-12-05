@@ -51,12 +51,22 @@ h1, h2, h3, h4 {
 }
 
 .nav-links .btn {
+    border-width: 2px;
+    border-color: #910707;
+    color: #910707;
+    padding: 6px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    background: transparent;
+    display: inline-block;
+    transition: all 0.3s;
+}
 
-  border-width: 2px;
-  border-color: #910707;
-  color: #910707;
-  padding: 6px 15px;
-  border-radius: 3px;
+.nav-links .btn:hover {
+    background: #910707;
+    color: white;
 }
 
 /* --- HERO --- */
