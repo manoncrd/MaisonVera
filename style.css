@@ -353,6 +353,25 @@ footer h3 {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .collection {
+        padding: 60px 5%;
+    }
+
+    .collection h2 {
+        font-size: 28px;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr; /* 1 seule colonne sur mobile */
+        gap: 25px;
+    }
+
+    .item img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
     .newsletter {
         min-height: 60vh;
     }
