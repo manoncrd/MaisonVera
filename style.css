@@ -394,21 +394,5 @@ footer h3 {
         font-size: 24px;
     }
  
-    .collection {
-        padding: 60px 5%;
-    }
-
-    .collection h2 {
-        font-size: 28px;
-    }
-
-    .collection-grid {
-        grid-template-columns: 1fr; /* 1 seule colonne = file indienne */
-        gap: 25px;
-    }
-
-    .item img {
-        height: 350px;
-    }
-}
+    
 }
