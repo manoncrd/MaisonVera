@@ -387,6 +387,7 @@ footer h3 {
 
     .newsletter-box p {
         font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .form-container {
@@ -397,6 +398,7 @@ footer h3 {
     .form-container input {
         width: 100%;
         max-width: 100%;
+        min-width: 100%;
     }
 
     .form-container button {
