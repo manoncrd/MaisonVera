@@ -294,6 +294,7 @@ h1, h2, h3, h4 {
 .form-container {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     gap: 10px;
 }
 
@@ -301,28 +302,36 @@ h1, h2, h3, h4 {
     flex: 1;
     max-width: 350px;
     padding: 15px 20px;
-    border-radius: 0;
+    border-radius: 8px;
     border: none;
     font-size: 16px;
-    background: #fff;
+    background: #f7f2f2;
     color: #666;
 }
-.form-container button {
+
+.form-container input::placeholder {
+    color: #999;
+}
+
+.newsletter .form-container button,
+.newsletter-box button {
     padding: 15px 40px;
-    border-radius: 0;
+    border-radius: 8px;
     border: none;
     font-size: 16px;
     font-weight: 600;
-    background: #7a1d14; /* Rouge comme le bouton "Voir toute la collection" */
-    color: white;
+    background: #7a1d14 !important;
+    color: white !important;
     cursor: pointer;
     transition: 0.3s;
     white-space: nowrap;
 }
 
-.form-container button:hover {
-    background: #5c140e; /* Rouge plus foncé au survol */
+.newsletter .form-container button:hover,
+.newsletter-box button:hover {
+    background: #5c140e !important;
 }
+
 
 /* Footer */
 footer {
@@ -377,33 +386,39 @@ footer h3 {
     }
 
     .newsletter-box {
-        width: 90%;
-        padding: 30px 20px;
+        width: 85%;
+        max-width: 85%;
+        padding: 40px 30px;
     }
 
     .newsletter-box h2 {
-        font-size: 24px;
+        font-size: 26px;
+        margin-bottom: 20px;
     }
 
     .newsletter-box p {
         font-size: 14px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+        display: none; /* Cache le sous-titre sur mobile comme dans l'image */
     }
 
     .form-container {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row; /* Garde horizontal sur mobile */
+        gap: 10px;
     }
 
     .form-container input {
-        width: 100%;
-        max-width: 100%;
-        min-width: 100%;
+        flex: 1;
+        max-width: none;
+        padding: 12px 15px;
+        font-size: 14px;
     }
 
-    .form-container button {
-        width: 100%;
-        padding: 15px 20px;
+    .newsletter .form-container button,
+    .newsletter-box button {
+        padding: 12px 25px;
+        font-size: 15px;
+        flex-shrink: 0;
     }
 }
 
