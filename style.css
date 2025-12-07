@@ -238,7 +238,7 @@ h1, h2, h3, h4 {
 .view-all-btn:hover {
     background: #5c140e;
 }
-/* --- NEWSLETTER --- */
+
  /* --- NEWSLETTER --- */
 .newsletter {
     background: url('acceuil.png') no-repeat center center;
@@ -289,9 +289,6 @@ h1, h2, h3, h4 {
     font-style: italic;
     color: #333;
 }
-.newsletter-box button {
-  color: #910707;
-  }
 
 /* Formulaire */
 .form-container {
@@ -310,21 +307,21 @@ h1, h2, h3, h4 {
     background: #fff;
     color: #666;
 }
-
 .form-container button {
     padding: 15px 40px;
     border-radius: 0;
     border: none;
     font-size: 16px;
     font-weight: 600;
-    background: #910707;
+    background: #7a1d14; /* Rouge comme le bouton "Voir toute la collection" */
     color: white;
     cursor: pointer;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .form-container button:hover {
-    background: #910707;
+    background: #5c140e; /* Rouge plus foncé au survol */
 }
 
 /* Footer */
@@ -369,9 +366,13 @@ footer h3 {
         font-size: 24px;
     }
 
+    .newsletter-box p {
+        font-size: 14px;
+    }
+
     .form-container {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .form-container input {
@@ -381,7 +382,9 @@ footer h3 {
 
     .form-container button {
         width: 100%;
+        padding: 15px 20px;
     }
+}
 
     footer {
         padding: 40px 20px;
